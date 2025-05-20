@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Influential Figures</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .card h3 {
+      margin-top: 0.5rem;
+    }
+    .more-content {
+      display: none;
+      margin-top: 0.5rem;
+    }
+    .toggle-button {
+      background: none;
+      border: none;
+      color: #007BFF;
+      cursor: pointer;
+      padding: 0;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 Influential Figures</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="influencers.html">Influential Figures</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="ethics.html">Ethics & Society</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Media Icons of the Adult Industry</h2>
+      <p>These individuals have significantly influenced the adult industry and its presence in pop culture, media, and the internet. They represent the evolution of adult content from taboo to mainstream recognition.</p>
+
+      <div class="grid">
+        <div class="card">
+          <img src="images/sweetiefox.jpg" alt="Sweetie Fox">
+          <h3>Sweetie Fox</h3>
+          <p>Sweetie Fox is a Russian content creator known for her stylized cosplay and integration of anime culture into adult entertainment.</p>
+          <div class="more-content">
+            <p>Her brand, characterized by pastel visuals and character aesthetics, appeals to niche internet subcultures. She successfully used platforms like Reddit and OnlyFans to expand her reach and redefine the fusion between adult content and digital fandom communities.</p>
+          </div>
+          <button class="toggle-button">Read more</button>
+        </div>
+
+        <div class="card">
+          <img src="images/violetmyers.jpg" alt="Violet Myers">
+          <h3>Violet Myers</h3>
+          <p>Violet Myers (1997–2021) became a cultural icon by blending adult content with gaming and anime fandom.</p>
+          <div class="more-content">
+            <p>Her presence on Twitch and YouTube allowed her to engage fans authentically, highlighting a shift where performers become lifestyle influencers. Her legacy continues to inspire creators navigating both mainstream and adult content platforms.</p>
+          </div>
+          <button class="toggle-button">Read more</button>
+        </div>
+
+        <div class="card">
+          <img src="images/miamalkova.jpg" alt="Mia Malkova">
+          <h3>Mia Malkova</h3>
+          <p>Mia Malkova is known for her award-winning performances and documentary appearances.</p>
+          <div class="more-content">
+            <p>She starred in "God, Sex and Truth" directed by Ram Gopal Varma, challenging social taboos in India and beyond. Her ability to transition between traditional adult film and broader media formats underscores the changing landscape of performer influence.</p>
+          </div>
+          <button class="toggle-button">Read more</button>
+        </div>
+
+        <div class="card">
+          <img src="images/angelawhite.jpg" alt="Angela White">
+          <h3>Angela White</h3>
+          <p>Angela White is one of the most awarded and respected figures in the adult industry.</p>
+          <div class="more-content">
+            <p>With a background in Gender Studies, she promotes ethical practices, gender equality, and fair performer treatment. Her work behind the camera as a director also set new standards for quality and agency within the industry.</p>
+          </div>
+          <button class="toggle-button">Read more</button>
+        </div>
+
+        <div class="card">
+          <img src="images/abelladanger.jpg" alt="Abella Danger">
+          <h3>Abella Danger</h3>
+          <p>Abella Danger is known for her dynamic performances and strong social media presence.</p>
+          <div class="more-content">
+            <p>Her crossover into pop culture—through appearances in music videos, interviews, and influencer marketing—demonstrates how adult entertainers are building broader personal brands that transcend the industry.</p>
+          </div>
+          <button class="toggle-button">Read more</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Hakim's Media Studies Project</p>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll('.toggle-button');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.previousElementSibling;
+        if (content.style.display === 'block') {
+          content.style.display = 'none';
+          button.textContent = 'Read more';
+        } else {
+          content.style.display = 'block';
+          button.textContent = 'Read less';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
